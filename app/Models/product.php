@@ -14,4 +14,13 @@ class product extends Model
         'price',
         'quntity'
     ];
-}
+    
+        public function catagory()
+        {
+        return $this->hasMany(catagory::class);
+        }
+    }
+       // return $this->hasMany(catagory::class, 'foreign_key');
+       // return $this->hasMany(catagory::class, 'foreign_key', 'local_key');
+        
+

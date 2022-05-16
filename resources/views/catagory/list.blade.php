@@ -18,10 +18,11 @@
  <th>
  id
  </th>
- <th>
+<th>
  catagory
  </th>
- <th></th>
+
+ <th>name</th>
  </tr>
  </thead>
  <tbody>

@@ -13,4 +13,8 @@ class catagory extends Model
         'id',
         'name'
     ];
+    public function product()
+    {
+        return $this->belongsTo(product::class);
+    }
 }

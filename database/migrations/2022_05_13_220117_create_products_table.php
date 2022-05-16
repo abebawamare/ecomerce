@@ -19,7 +19,12 @@ class CreateProductsTable extends Migration
             $table->string('unit');
             $table->String('price');
             $table->string('quantity');
+            $table->unsignedBigInteger('catagory_id')->foreign('catagory_id')->references('id')->on('catagory')->onDelete('Casecade');
+            
             $table->timestamps();
+           // $table->timestamps();
+            
+
         }); 
     }
     /**

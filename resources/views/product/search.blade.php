@@ -5,12 +5,21 @@
  <div class="col-md-8">
  <div class="card">
  <div class="card-header">
- {{ ('Products Detail') }}
+ {{ ('product Detail') }}
  </div>
  <div class="card-body">
- id : {{ $products->id }}
+ id : {{ $product->id }}
  <br>
- Products : {{ $products->name }}
+name : {{ $product->name }}
+ <br>
+ <br>
+ unit : {{ $product->unit }}
+ <br>
+ <br>
+ quantity: {{ $product->quantity }}
+ <br>
+ <br>
+ price : {{ $product->price }}
  <br>
  </div>
  </div>
@@ -19,7 +28,7 @@
 </div>
 <div class="container ">
  <div class="col-md-8">
- <a class="btn btnsuccess" href="{{ route('products/list') }}" role="button"> {{ ('Back') }}</a>
+ <a class="btn btnsuccess" href="{{ route('product/list') }}" role="button"> {{ ('Back') }}</a>
  </div>
 </div>
 @endsection

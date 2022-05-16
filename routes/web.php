@@ -21,8 +21,6 @@ Route::get('/', function () {
 });
 Route::get('/product/register', [productController::class, 'register'])->name('product/register');
 Route::post('/product/register', [productController::class, 'store'])->name('product/register');
-
-
 Auth::routes();
 Route::get('/home', [App\Http\controllers\HomeControllers ::class, 'index'])->name('home');
 Route::get('/product/list', [productController::class, 'get_all'])->name('product/list');
@@ -31,8 +29,8 @@ Route::post('/product/update',[productController::class,'update'])->name('produc
 Route::get('/product/delete/{id}', [productController::class, 'delete']);
 Route::get('/product/search/{id}', [productController::class, 'search'])->name('product/search');
 Auth::routes();
-
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/catagory/register', [catagoryController::class, 'register'])->name('catagory/register');
 Route::post('/catagory/register', [catagoryController::class, 'store'])->name('catagory/register');
+Route::get('/catagory/list', [catagoryController::class, 'get_all'])->name('catagory/list');
+
